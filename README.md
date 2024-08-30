@@ -1,29 +1,64 @@
-# Create T3 App
+# Patient Dashboard
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This project is a React-based patient dashboard application that allows healthcare professionals to view and manage patient data efficiently.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Patient selection sidebar
+- Diagnosis history visualization
+- Diagnostic list display
+- Patient details view
+- Lab results display
+- Blood pressure chart
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Prerequisites
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+Before you begin, ensure you have met the following requirements:
 
-## Learn More
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Getting Started
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+To get the project up and running, follow these steps:
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+1. Clone the repository:
 
-## How do I deploy this?
+   ```
+   git clone https://github.com/your-username/patient-dashboard.git
+   cd patient-dashboard
+   ```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+2. Install the dependencies:
+
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000` (or the port specified in your console output).
+
+## Project Structure
+
+- `src/components/`: Contains React components for the dashboard
+- `src/hooks/`: Custom React hooks, including `usePatientData`
+- `src/types/`: TypeScript type definitions
+- `src/config/`: Configuration files (e.g., chart options)
+
+## Key Components
+
+- `PatientDashboard`: Main component that orchestrates the dashboard layout
+- `PatientSidebar`: Allows selection of patients
+- `DiagnosisHistory`: Displays patient diagnosis history
+- `BloodPressureChart`: Visualizes blood pressure data
+- `PatientDetails`: Shows detailed patient information
+- `LabResults`: Displays patient lab results
+
+## Custom Hooks
+
+- `usePatientData`: Manages patient data and selection
